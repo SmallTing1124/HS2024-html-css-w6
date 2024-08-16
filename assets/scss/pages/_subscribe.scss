@@ -1,0 +1,15 @@
+.subscribe-card {
+    &.active {
+        border-color: $accent-200;
+        border-width: 2px;
+
+        ul {
+            color: $neutral-500;
+        }
+
+        .subscribe-price {
+            color: $accent-200;
+        }
+    }
+
+}

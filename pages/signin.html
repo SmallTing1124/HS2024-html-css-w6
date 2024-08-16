@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivre 登入</title>
+
+</head>
+
+<body>
+    <%- include('./layout/navbar'); -%>
+        <main>
+            <section class="py-lg-11 py-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="card p-lg-7 p-5 mb-5 bg-white">
+                                <h1 class="mb-lg-7 mb-5 fs-4 text-primary">登入</h1>
+                                <div class="mb-3">
+                                    <label for="userName" class="form-label">會員帳號</label>
+                                    <input type="text" class="form-control" id="userName" aria-describedby="userName"
+                                        placeholder="請輸入會員帳號">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="userPassword" class="form-label">密碼</label>
+                                    <input type="password" class="form-control" id="userPassword"
+                                        aria-describedby="userPassword" placeholder="請輸入密碼">
+                                </div>
+                              
+                                <a href="#" class=" btn btn-primary fs-5 mb-lg-7 mb-5">立即登入<i
+                                        class="bi bi-arrow-right fs-4"></i></a>
+                                <div class="text-center text-gray-300 mb-lg-7 mb-5 divider"><span class="bg-white ">或以其他方式登入</span></div>
+                                <a href="#" class="btn btn-light link-dark mb-1"><img src="/assets/images/icons-google.png" class="pe-2" alt="google">使用 Google 註冊</a>
+                                <a href="#" class="btn btn-light link-dark"><img src="/assets/images/icons-facebook.png" class="pe-2" alt="facebook">使用 Facebook 註冊</a>
+                                <div class="text-center  mt-lg-7 mt-5">已經是會員了？ <a href="signup.html" class="link-primary">點此註冊</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivre 訂閱方案－付款</title>
+
+</head>
+
+<body>
+    <%- include('./layout/navbar'); -%>
+        <main>
+            <div class="pt-lg-10 pt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <nav aria-label="breadcrumb mb-4">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+                                    <li class="breadcrumb-item"><a href="subscribe.html">訂閱方案</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">付款</li>
+                                </ol>
+                            </nav>
+                            <h1 class="page-title fs-4 fs-lg-1 mb-lg-8 mb-7">付款</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="pb-10 mb-lg-4">
+                <div class="container">
+                    <form action="payment-success.html">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="card p-lg-7 p-5 mb-5 bg-white">
+                                    <h2 class="mb-lg-7 mb-5">購買人</h2>
+                                    <div class="mb-3">
+                                        <label for="paymentName" class="form-label">姓名</label>
+                                        <input type="text" class="form-control" id="paymentName"
+                                            aria-describedby="paymentName" placeholder="請輸入姓名">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="paymentPassword" class="form-label">密碼</label>
+                                        <input type="password" class="form-control" id="paymentPassword"
+                                            aria-describedby="paymentPassword" placeholder="請輸入密碼">
+                                    </div>
+                                    <div class="mb-5">
+                                        <label for="paymentEmail" class="form-label">電子信箱</label>
+                                        <input type="email" class="form-control" id="paymentEmail"
+                                            aria-describedby="paymentEmail" placeholder="請輸入電子信箱">
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">記住我的資訊</label>
+                                    </div>
+                                </div>
+                                <div class="card p-lg-7 p-5  mb-5  bg-white">
+                                    <h2 class="mb-lg-7 mb-5 fs-lg-2 fs-3">付款方式</h2>
+                                    <div class="mb-7">
+                                        <label for="paymentEmail" class="form-label">Pay With</label>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1" checked>
+                                            <label class="form-check-label" for="inlineRadio1">信用卡</label>
+                                        </div>
+                                    </div>
+                                    <div class="mb-7">
+                                        <label for="paymentCreditNum" class="form-label">信用卡號碼</label>
+                                        <input type="text" class="form-control" id="paymentCreditNum"
+                                            aria-describedby="paymentCreditNum" placeholder="1234 5678 1234 5678">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <label for="expiryDate" class="form-label">過期日</label>
+                                            <input type="date" class="form-control" id="expiryDate"
+                                                aria-describedby="expiryDatee" placeholder="ＭＭ/YY">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label for="verificationCode" class="form-label">認證碼</label>
+                                            <input type="number" class="form-control" id="verificationCode"
+                                                aria-describedby="verificationCode" placeholder="CVV">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card p-lg-7 p-5 mb-5 bg-white border-primary">
+                                    <h2 class="mb-lg-7 mb-5 text-primary">訂單資訊</h2>
+                                    <div class="d-flex justify-content-between py-5 border-top border-bottom">
+                                        <div class="text">
+                                            <div class="fs-5 text-dark mb-2">輕量型方案</div>
+                                            <span>年繳</span>
+                                        </div>
+                                        <span class="eng-font fs-5 text-dark">NT 1,188</span>
+                                    </div>
+                                    <div class="py-lg-7 py-5 border-bottom">
+                                        <label for="discountCode" class="form-label">折扣碼</label>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <input type="text" class="form-control" id="discountCode"
+                                                aria-describedby="discountCode" placeholder="請輸入折扣碼">
+                                            <button type="button"
+                                                class="btn btn-light px-4 py-2 col-auto link-gray-400">套用</button>
+                                        </div>
+                                    </div>
+                                    <div class="py-lg-7 py-5 border-bottom">
+                                        <div class="d-flex justify-content-between text-gray-300 mb-2">
+                                            <span>小計</span> <span class="eng-font">NT 1,188</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between text-gray-300">
+                                            <span>折扣</span> <span class="eng-font">0</span>
+                                        </div>
+                                    </div>
+                                    <div class="py-lg-7 py-5">
+                                        <div class="d-flex justify-content-between text-dark mb-2">
+                                            <span>總計</span> <span class="eng-font fs-5">NT 1,188</span>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary py-2">立即付款
+                                        <i class="bi bi-arrow-right fs-4"></i>
+                                    </button>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>
